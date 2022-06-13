@@ -20,6 +20,8 @@ CSS: Cascading Style Sheets
       href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <script></script>
   </head>
   <body>
     <main>
@@ -38,7 +40,7 @@ CSS: Cascading Style Sheets
         />
 
         <h1>Ilehana Rios</h1>
-        <a href="https://instagram.com/ilehana_">
+        <a href="https://github.com/ilehana" target="_blank">
           <img
             src="images/githublogo.png"
             alt="Github Icon"
@@ -48,53 +50,65 @@ CSS: Cascading Style Sheets
         >
 
         <p>
-          A Software Engeering student focused on finishing any challenge on her
-          way.
+          A Software Development student willing to complete any challenge on
+          her way.
         </p>
 
         <ul>
           <li>
-            <a href="https://www.youtube.com"
+            <a target="_blank" href="https://www.youtube.com"
               ><img
                 width="30px"
                 height="30px"
-                src="images/youtubelogosvg.png"
+                src="images/youtube-brands.svg"
                 alt="Youtube Logo"
-                target="_blank"
             /></a>
           </li>
           <li>
-            <a href="https://www.facebook.com"
-              ><img
+            <a href="https://www.facebook.com/ilehana.rios" target="_blank">
+              <img
                 width="30px"
                 height="30px"
-                src="images/facebooklogo.png"
+                src="images/facebook-brands.svg"
                 alt="Facebook Logo"
-                target="_blank"
-            /></a>
+              />
+            </a>
           </li>
           <li>
-            <a href="https://www.instagram.com"
+            <a target="_blank" href="https://www.instagram.com/ilehana_"
               ><img
                 width="30px"
                 height="30px"
-                src="images/instagramlogo.png"
+                src="images/instagram-brands.svg"
                 alt="Instagram Logo"
-                target="_blank"
             /></a>
           </li>
           <li>
-            <a href="https://www.twitter.com"
+            <a target="_blank" href="https://www.twitter.com"
               ><img
                 width="30px"
                 height="30px"
-                src="images/twitterlogo.png"
+                src="images/twitter-brands.svg"
                 alt="Instagram Logo"
-                target="_blank"
             /></a>
           </li>
         </ul>
       </div>
     </main>
+    <script>
+      function showMeSomething() {
+        alert(links.instagram)
+      }
+
+      const links = {
+        github: 'ilehana',
+        youtube: '92x_8iELLmsfpmfSwfz1Eg',
+        facebook: 'ilehana.rios',
+        instagram: 'ilehana_',
+        twitter: 'IlehanaRios'
+      }
+
+      showMeSomething()
+    </script>
   </body>
 </html>
