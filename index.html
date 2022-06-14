@@ -34,22 +34,24 @@ CSS: Cascading Style Sheets
         />
 
         <img
+          id="userPhoto"
           class="avatar"
           src="images/profilepic.jpeg"
           alt="Profile Picture"
         />
 
         <h1 id="userName">Ilehana Rios</h1>
-        <a href="https://github.com/ilehana" target="_blank">
+        <a id="userLink" href="https://github.com/ilehana" target="_blank">
           <img
             src="images/githublogo.png"
             alt="Github Icon"
             width="14px"
             height="14px"
-          />ilehana_</a
+          />
+          <span id="userLogin">ilehana_</span></a
         >
 
-        <p>
+        <p id="userBio">
           A Software Development student willing to complete any challenge on
           her way.
         </p>
@@ -95,24 +97,6 @@ CSS: Cascading Style Sheets
         </ul>
       </div>
     </main>
-    <script>
-      const linksSocialMedia = {
-        github: 'ilehana',
-        youtube: '92x_8iELLmsfpmfSwfz1Eg',
-        facebook: 'ilehana.rios',
-        instagram: 'ilehana_',
-        twitter: 'IlehanaRios'
-      }
-      function changeSocialMediaLinks() {
-        for (let li of socialLinks.children) {
-          const social = li.getAttribute('class')
-          li.children[0].href = `https://www.${social}.com/${linksSocialMedia[social]}`
-
-          alert(li.children[0].href)
-        }
-      }
-
-      changeSocialMediaLinks()
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
